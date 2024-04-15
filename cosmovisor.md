@@ -57,7 +57,6 @@ unzip mantrachaind-linux-amd64.zip
 ```
 mkdir -p $HOME/.mantrachain/cosmovisor/genesis/bin
 mv mantrachaind $HOME/.mantrachain/cosmovisor/genesis/bin/
-rm -rf build
 ```
 ### 🚧System link
 ```
