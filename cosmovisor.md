@@ -109,10 +109,11 @@ mantrachaind init NODE-ADI-YAZ --chain-id mantra-hongbai-1
 curl -Ls https://raw.githubusercontent.com/MANTRA-Finance/public/main/mantrachain-hongbai/genesis.json > $HOME/.mantrachain/config/genesis.json
 ```
 ### 🚧Seed
+
 ```
 CONFIG_TOML="$HOME/.mantrachain/config/config.toml"
 SEEDS="d6016af7cb20cf1905bd61468f6a61decb3fd7c0@34.72.142.50:26656"
-PEERS="da061f404690c5b6b19dd85d40fefde1fecf406c@34.68.19.19:26656,20db08acbcac9b7114839e63539da2802b848982@34.72.148.3:26656"
+PEERS="da061f404690c5b6b19dd85d40fefde1fecf406c@34.68.19.19:26656,20db08acbcac9b7114839e63539da2802b848982@34.72.148.3:26656,7ba9e5051a1cb2542c2ecbfa12954bdbab3121f5@34.171.207.218:26656,7ab572034a2d1d9d67e31dbac43c4554e0e53ba5@104.198.160.158:26656,75855dec829d40f105299f09dc64f05b44057a3a@34.134.75.248:26656"
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $CONFIG_TOML
 sed -i.bak -e "s/^seeds =.*/seeds = \"$SEEDS\"/" $CONFIG_TOML
 external_address=$(wget -qO- eth0.me)
