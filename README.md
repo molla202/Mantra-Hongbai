@@ -2,7 +2,7 @@
 ![image](https://github.com/molla202/MantraChain/assets/91562185/fd76840c-6f3f-4fdb-8650-58e84ae353fa)
 
 
-`Faucet` : https://faucet.testnet.mantrachain.io
+`Faucet` : https://faucet.hongbai.mantrachain.io/
 
 `Discord` : https://discord.gg/tSgpKbaP
 
@@ -48,6 +48,7 @@ source $HOME/.bash_profile
 ### Dosyaları çekelim
 ```
 cd $HOME
+rm -rf /usr/lib/libwasmvm.x86_64.so
 sudo wget -P /usr/lib https://github.com/CosmWasm/wasmvm/releases/download/v1.3.1/libwasmvm.x86_64.so
 wget https://github.com/MANTRA-Finance/public/raw/main/mantrachain-hongbai/mantrachaind-linux-amd64.zip
 unzip mantrachaind-linux-amd64.zip
@@ -75,7 +76,7 @@ curl -Ls https://raw.githubusercontent.com/MANTRA-Finance/public/main/mantrachai
 ```
 CONFIG_TOML="$HOME/.mantrachain/config/config.toml"
 SEEDS="d6016af7cb20cf1905bd61468f6a61decb3fd7c0@34.72.142.50:26656"
-PEERS="da061f404690c5b6b19dd85d40fefde1fecf406c@34.68.19.19:26656,20db08acbcac9b7114839e63539da2802b848982@34.72.148.3:26656"
+PEERS="da061f404690c5b6b19dd85d40fefde1fecf406c@34.68.19.19:26656,20db08acbcac9b7114839e63539da2802b848982@34.72.148.3:26656,7ba9e5051a1cb2542c2ecbfa12954bdbab3121f5@34.171.207.218:26656,7ab572034a2d1d9d67e31dbac43c4554e0e53ba5@104.198.160.158:26656,75855dec829d40f105299f09dc64f05b44057a3a@34.134.75.248:26656"
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $CONFIG_TOML
 sed -i.bak -e "s/^seeds =.*/seeds = \"$SEEDS\"/" $CONFIG_TOML
 external_address=$(wget -qO- eth0.me)
