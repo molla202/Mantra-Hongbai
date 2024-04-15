@@ -49,6 +49,7 @@ source $HOME/.bash_profile
 ### 🚧Dosyaları çekelim
 ```
 cd $HOME
+rm -rf /usr/lib/libwasmvm.x86_64.so
 sudo wget -P /usr/lib https://github.com/CosmWasm/wasmvm/releases/download/v1.3.1/libwasmvm.x86_64.so
 wget https://github.com/MANTRA-Finance/public/raw/main/mantrachain-hongbai/mantrachaind-linux-amd64.zip
 unzip mantrachaind-linux-amd64.zip
