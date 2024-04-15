@@ -2,7 +2,7 @@
 ![image](https://github.com/molla202/MantraChain/assets/91562185/fd76840c-6f3f-4fdb-8650-58e84ae353fa)
 
 
-`Faucet` : https://faucet.testnet.mantrachain.io
+`Faucet` : https://faucet.hongbai.mantrachain.io/
 
 `Discord` : https://discord.gg/tSgpKbaP
 
