@@ -67,7 +67,7 @@ mantrachaind init "buraya-yazılacak" --chain-id mantra-hongbai-1
 ### Genesis ve adressbook indirelim
 
 ```
-curl -Ls https://github.com/MANTRA-Finance/hongbai/raw/main/genesis.json > $HOME/.mantrachain/config/genesis.json
+curl -Ls https://raw.githubusercontent.com/MANTRA-Finance/public/main/mantrachain-hongbai/genesis.json > $HOME/.mantrachain/config/genesis.json
 ```
 
 ### Seed ve peer ayarları
